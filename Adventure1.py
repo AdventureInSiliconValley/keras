@@ -5,6 +5,7 @@ model = Sequential()
 
 # The relu activation method is wonderful. It assumes we got an input tensor with 100 dimensions
 model.add(Dense(units=64, activation='relu', input_dim=100))
+# 'softmax' is as wonderful as 'relu'
 model.add(Dense(units=10, activation='softmax'))
 
 model.compile(loss='categorial_crossentropy',
