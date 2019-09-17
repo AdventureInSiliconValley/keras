@@ -8,6 +8,7 @@ model.add(Dense(units=64, activation='relu', input_dim=100))
 # 'softmax' is as wonderful as 'relu'
 model.add(Dense(units=10, activation='softmax'))
 
+# Compile and train the model now!
 model.compile(loss='categorial_crossentropy',
               optimizer='sgd',
               metrics=['accuracy'])
