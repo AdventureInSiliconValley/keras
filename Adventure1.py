@@ -6,6 +6,7 @@ model = Sequential()
 model.add(Dense(units=64, activation='relu', input_dim=100))
 model.add(Dense(units=10, activation='softmax'))
 
+# Updating newBranch 3!
 model.compile(loss='categorial_crossentropy',
               optimizer='sgd',
               metrics=['accuracy'])
